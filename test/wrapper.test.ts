@@ -9,7 +9,7 @@ describe("Wrapper", () => {
     expect(wrap("word", 10)).toEqual("word");
   });
 
-  it("returns string shorter than column", () => {
+  it("split one word", () => {
     expect(wrap("word", 2)).toEqual("wo\nrd");
   });
 
