@@ -6,14 +6,11 @@ describe("Wrapper", () => {
   });
 
   it("returns string shorter than column", () => {
-    expect(wrap("this", 10)).toEqual("this");
+    expect(wrap("word", 10)).toEqual("word");
   });
 
-  it("wrap two words after space", () => {
-    expect(wrap("word word", 6)).toEqual("word\nword");
-  })
+  it("returns string shorter than column", () => {
+    expect(wrap("word", 2)).toEqual("wo\nrd");
+  });
 
-  it("wrap three words after space", () => {
-    expect(wrap("word word word", 6)).toEqual("word\nword\nword");
-  })
 });
