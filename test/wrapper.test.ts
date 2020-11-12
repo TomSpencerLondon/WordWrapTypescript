@@ -13,4 +13,8 @@ describe("Wrapper", () => {
     expect(wrap("word", 2)).toEqual("wo\nrd");
   });
 
+  it("splits one word many times", () => {
+    expect(wrap("abcdefghij", 3)).toEqual("abc\ndef\nghi\nj");
+  })
+
 });
