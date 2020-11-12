@@ -8,4 +8,6 @@ describe("Wrapper", () => {
   it("returns string shorter than column", () => {
     expect(wrap("this", 10)).toEqual("this");
   });
+
+
 });
