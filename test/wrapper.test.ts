@@ -23,5 +23,13 @@ describe("Wrapper", () => {
 
   it("wrap after boundary", () => {
     expect(wrap("word word", 6)).toEqual("word\nword");
-  })
+  });
+
+  it("wrap well before word boundary", () => {
+    expect(wrap("word word", 3)).toEqual("wor\nd\nwor\nd");
+  });
+
+  it("wrap just before word boundary", () => {
+    expect(wrap("word word", 4)).toEqual("word\nword");
+  });
 });
