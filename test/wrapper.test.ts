@@ -21,4 +21,7 @@ describe("Wrapper", () => {
     expect(wrap("word word", 5)).toEqual("word\nword");
   });
 
+  it("wrap after boundary", () => {
+    expect(wrap("word word", 6)).toEqual("word\nword");
+  })
 });
