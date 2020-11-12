@@ -17,4 +17,8 @@ describe("Wrapper", () => {
     expect(wrap("abcdefghij", 3)).toEqual("abc\ndef\nghi\nj");
   })
 
+  it("wrap word on word boundary", () => {
+    expect(wrap("word word", 5)).toEqual("word\nword");
+  });
+
 });
